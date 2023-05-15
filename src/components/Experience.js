@@ -22,6 +22,7 @@ import {
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
+import "../App.css";
 
 export default function Experience({ color }) {
   const [selected, setSelected] = useState("");
@@ -48,7 +49,24 @@ export default function Experience({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Stack px={4} spacing={4}></Stack>
+          <Stack px={4} spacing={4}>
+            <div className="chakra-card css-1mp4omr">
+              <div className="chakra-card__header">
+                Software Developer @ UBCEA
+              </div>
+              <div className="chakra-card__body">Bye</div>
+              <div className="chakra-card__footer">Hello</div>
+            </div>
+          </Stack>
+          <Stack px={4} spacing={4}>
+            <div className="chakra-card css-1mp4omr">
+              <div className="chakra-card__header">
+                Software Developer @ UBCEA
+              </div>
+              <div className="chakra-card__body">Bye</div>
+              <div className="chakra-card__footer">Hello</div>
+            </div>
+          </Stack>
         </Stack>
       </Container>
     </>
