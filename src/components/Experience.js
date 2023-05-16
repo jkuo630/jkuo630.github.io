@@ -5,10 +5,6 @@ import {
   Container,
   Box,
   HStack,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
   Flex,
   Badge,
   Image,
@@ -23,6 +19,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
 import "../App.css";
+import Card from "react-bootstrap/Card";
 
 export default function Experience({ color }) {
   const [selected, setSelected] = useState("");
@@ -38,7 +35,7 @@ export default function Experience({ color }) {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
+          pb={{ base: 10, md: 10 }}
         >
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
@@ -49,24 +46,26 @@ export default function Experience({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Stack px={4} spacing={4}>
-            <div className="chakra-card css-1mp4omr">
-              <div className="chakra-card__header">
-                Software Developer @ UBCEA
-              </div>
-              <div className="chakra-card__body">Bye</div>
-              <div className="chakra-card__footer">Hello</div>
-            </div>
-          </Stack>
-          <Stack px={4} spacing={4}>
-            <div className="chakra-card css-1mp4omr">
-              <div className="chakra-card__header">
-                Software Developer @ UBCEA
-              </div>
-              <div className="chakra-card__body">Bye</div>
-              <div className="chakra-card__footer">Hello</div>
-            </div>
-          </Stack>
+          <Card
+            style={{
+              width: "48rem",
+              height: "10rem",
+              backgroundColor: "#4a5568",
+            }}
+          >
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Card Subtitle
+              </Card.Subtitle>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
         </Stack>
       </Container>
     </>
