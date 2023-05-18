@@ -5,24 +5,23 @@ import {
   Container,
   Box,
   HStack,
-  Flex,
-  Badge,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
   Image,
-  List,
-  ListItem,
-  ListIcon,
   Button,
-  ButtonGroup,
-  Center,
+  Heading,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
 import "../App.css";
-import Card from "react-bootstrap/Card";
 
 export default function Experience({ color }) {
   const [selected, setSelected] = useState("");
+
+  const ubcea = () => {
+    window.open(`https://www.ubcesports.ca/`, "_blank", "noreferrer,noopener");
+  };
 
   const handleSelected = (value) => {
     setSelected(value);
@@ -47,26 +46,31 @@ export default function Experience({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Card
-            style={{
-              width: "48rem",
-              height: "8rem",
-              backgroundColor: "#4a5568",
-            }}
+            direction={{ base: "column", sm: "row" }}
+            overflow="hidden"
+            variant="outline"
           >
-            <Card.Body>
-              <Card.Title>Software Developer @ UBCEA</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                {" "}
-                2022-Present
-              </Card.Subtitle>
-              {/* <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text> */}
-              <Card.Link target="blank" href="https://www.ubcesports.ca/">
-                Visit Website
-              </Card.Link>
-            </Card.Body>
+            <Image
+              objectFit="cover"
+              maxW={{ base: "100%", sm: "200px" }}
+              src="ubcealogo.png" //&auto=format&fit=crop&w=800&q=60
+              alt="UBCEA Logo"
+            />
+
+            <Stack>
+              <CardBody>
+                <Heading size="md">Software Engineer @ UBCEA</Heading>
+                <Text py="2">2022-Present</Text>
+                <Text py="2">
+                  Web + App Development in React, Next.js and Wordpress
+                </Text>
+              </CardBody>
+              <CardFooter>
+                <Button onClick={ubcea} variant="solid" colorScheme="blue">
+                  Visit Website
+                </Button>
+              </CardFooter>
+            </Stack>
           </Card>
         </Stack>
       </Container>
