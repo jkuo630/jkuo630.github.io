@@ -11,7 +11,7 @@ export default function About({ color }) {
         >
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text my={5} color={`${color}.400`} fontWeight={800}>
                 01
               </Text>
               <Text fontWeight={800}>About</Text>

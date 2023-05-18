@@ -39,7 +39,7 @@ export default function Experience({ color }) {
         >
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text my={5} color={`${color}.400`} fontWeight={800}>
                 02
               </Text>
               <Text fontWeight={800}>Experience</Text>
@@ -49,7 +49,7 @@ export default function Experience({ color }) {
           <Card
             style={{
               width: "48rem",
-              height: "7rem",
+              height: "8rem",
               backgroundColor: "#4a5568",
             }}
           >
