@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   createIcon,
 } from "@chakra-ui/react";
+import "../App.css";
 
 export default function Header({ color }) {
   const scrollToContact = () => {
@@ -45,7 +46,7 @@ export default function Header({ color }) {
             lineHeight={"110%"}
           >
             Hi, my name is Jason Kuo. <br />
-            <Text as={"span"} color={`${color}.400`}>
+            <Text color={`${color}.400`} className="typewriter">
               I'm a software engineer.
             </Text>
           </Heading>
