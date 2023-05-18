@@ -18,8 +18,15 @@ export default function About({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Text color={"gray.600"} fontSize={"xl"} px={4}>
-            Hello
+          <Text color={"gray.400"} fontSize={"xl"} px={4}>
+            Hello! My name is Jason and I am a sophomore at UBC studying
+            Computer Science and Business. I am a passionate software developer
+            with a diverse portfolio of projects containing a variety of
+            technical stacks. I also have extensive leadership experience
+            through my professional and extracurricular endeavours. When I'm not
+            coding, you can find me hitting the gym, playing the newest video
+            games, polishing my stock portfolio or catching up with my favourite
+            animes! Here is my tech stack:
           </Text>
         </Stack>
       </Container>
