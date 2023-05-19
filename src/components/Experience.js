@@ -23,6 +23,14 @@ export default function Experience({ color }) {
     window.open(`https://www.ubcesports.ca/`, "_blank", "noreferrer,noopener");
   };
 
+  const leadersfluent = () => {
+    window.open(
+      `https://leadersfluent-ca.webnode.page/`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
   const handleSelected = (value) => {
     setSelected(value);
   };
@@ -67,6 +75,40 @@ export default function Experience({ color }) {
               </CardBody>
               <CardFooter>
                 <Button onClick={ubcea} variant="solid" colorScheme="blue">
+                  Visit Website
+                </Button>
+              </CardFooter>
+            </Stack>
+          </Card>
+          <Card
+            direction={{ base: "column", sm: "row" }}
+            overflow="hidden"
+            variant="outline"
+          >
+            <Image
+              objectFit="cover"
+              maxW={{ base: "100%", sm: "200px" }}
+              src="https://media.licdn.com/dms/image/C4E0BAQEyI4ApGXG0CQ/company-logo_200_200/0/1607371572626?e=2147483647&v=beta&t=U3ieMq4ZbmcTKe5iddsUx0DCX6OaJBX7e-lLHZP5d_w" //&auto=format&fit=crop&w=800&q=60
+              alt="LeadersFluent Logo"
+            />
+
+            <Stack>
+              <CardBody>
+                <Heading size="md">
+                  Director of Technology @ LeadersFluent
+                </Heading>
+                <Text py="2">2020-2022</Text>
+                <Text py="2">
+                  Web Development, Content Creation, API Integration in HTML,
+                  CSS, JavaScript, MailChimp and Wordpress.
+                </Text>
+              </CardBody>
+              <CardFooter>
+                <Button
+                  onClick={leadersfluent}
+                  variant="solid"
+                  colorScheme="blue"
+                >
                   Visit Website
                 </Button>
               </CardFooter>
