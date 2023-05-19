@@ -53,7 +53,7 @@ export default function Experience({ color }) {
             <Image
               objectFit="cover"
               maxW={{ base: "100%", sm: "200px" }}
-              src="ubcealogo.png" //&auto=format&fit=crop&w=800&q=60
+              src="https://static-cdn.jtvnw.net/jtv_user_pictures/89ee6212-c17d-444e-8641-b5b3279d88d2-profile_image-300x300.png" //&auto=format&fit=crop&w=800&q=60
               alt="UBCEA Logo"
             />
 
