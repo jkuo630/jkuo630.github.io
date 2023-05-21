@@ -66,6 +66,14 @@ export default function Projects({ color }) {
     );
   };
 
+  const chromeextension = () => {
+    window.open(
+      `https://github.com/jkuo630/aichromeextension`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
   return (
     <>
       <Container maxW={"3xl"} id="projects">
@@ -85,6 +93,41 @@ export default function Projects({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Stack px={4} spacing={4}>
+            <Card
+              direction={{ base: "column", sm: "row" }}
+              overflow="hidden"
+              variant="outline"
+            >
+              <Image
+                objectFit="cover"
+                maxW={{ base: "100%", sm: "200px" }}
+                src="https://1000logos.net/wp-content/uploads/2021/04/Chrome-logo.png"
+                alt="chrome Logo"
+              />
+
+              <Stack>
+                <CardBody>
+                  <Heading size="md">AI Chrome Extension</Heading>
+                  <Text py="2">May 2023</Text>
+                  <Text py="2">
+                    A Chrome extension that brings ChatGPT's conversational
+                    abilities to your browser. Chat effortlessly with an AI
+                    assistant for research, discussions, and information. Just
+                    click the icon, type your queries, and get human-like
+                    responses. Made using HTML, CSS, Javascript, OpenAI API.
+                  </Text>
+                </CardBody>
+                <CardFooter>
+                  <Button
+                    onClick={chromeextension}
+                    variant="solid"
+                    colorScheme="blue"
+                  >
+                    Visit Github Repo
+                  </Button>
+                </CardFooter>
+              </Stack>
+            </Card>
             <Card
               direction={{ base: "column", sm: "row" }}
               overflow="hidden"
