@@ -74,6 +74,14 @@ export default function Projects({ color }) {
     );
   };
 
+  const jobsearchapp = () => {
+    window.open(
+      `https://github.com/jkuo630/reactnativeapp`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
   return (
     <>
       <Container maxW={"3xl"} id="projects">
@@ -93,6 +101,39 @@ export default function Projects({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Stack px={4} spacing={4}>
+            <Card
+              direction={{ base: "column", sm: "row" }}
+              overflow="hidden"
+              variant="outline"
+            >
+              <Image
+                objectFit="cover"
+                maxW={{ base: "100%", sm: "200px" }}
+                src="https://kaysharbor.com/wp-content/uploads/2018/05/all-about-react-native-apps-776x415.png"
+                alt="job search"
+              />
+
+              <Stack>
+                <CardBody>
+                  <Heading size="md">Job Search Mobile App</Heading>
+                  <Text py="2">June 2023</Text>
+                  <Text py="2">
+                    A responsive IOS and Android mobile application that
+                    simplfies the job searching process. Made using React Native
+                    and Indeed API. Note: API key has been hidden and disabled.
+                  </Text>
+                </CardBody>
+                <CardFooter>
+                  <Button
+                    onClick={jobsearchapp}
+                    variant="solid"
+                    colorScheme="blue"
+                  >
+                    Visit Github Repo
+                  </Button>
+                </CardFooter>
+              </Stack>
+            </Card>
             <Card
               direction={{ base: "column", sm: "row" }}
               overflow="hidden"
