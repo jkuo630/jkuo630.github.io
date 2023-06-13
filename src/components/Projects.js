@@ -82,6 +82,14 @@ export default function Projects({ color }) {
     );
   };
 
+  const pingpong = () => {
+    window.open(
+      `https://github.com/jkuo630/Smarttwigs-Application-Exercise`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
   return (
     <>
       <Container maxW={"3xl"} id="projects">
@@ -109,8 +117,8 @@ export default function Projects({ color }) {
               <Image
                 objectFit="cover"
                 maxW={{ base: "100%", sm: "200px" }}
-                src="https://kaysharbor.com/wp-content/uploads/2018/05/all-about-react-native-apps-776x415.png"
-                alt="job search"
+                src="https://www.imperialusa.com/media/blog/Ping_Pong_Post.jpg"
+                alt="ping pong"
               />
 
               <Stack>
@@ -129,11 +137,7 @@ export default function Projects({ color }) {
                   </Text>
                 </CardBody>
                 <CardFooter>
-                  <Button
-                    onClick={jobsearchapp}
-                    variant="solid"
-                    colorScheme="blue"
-                  >
+                  <Button onClick={pingpong} variant="solid" colorScheme="blue">
                     Visit Github Repo
                   </Button>
                 </CardFooter>
