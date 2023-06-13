@@ -115,6 +115,44 @@ export default function Projects({ color }) {
 
               <Stack>
                 <CardBody>
+                  <Heading size="md">
+                    Ping Pong Point Tracker and Leaderboard
+                  </Heading>
+                  <Text py="2">June 2023</Text>
+                  <Text py="2">
+                    A full-stack web application that allows users to sign in
+                    and track points in a ping pong game. Users can be
+                    remembered and stored. There is a leaderboard that trackers
+                    each player's wins, points and overall position relative to
+                    other players. Built with a fully function front-end using
+                    React and the backend using Express.js, Node.js.
+                  </Text>
+                </CardBody>
+                <CardFooter>
+                  <Button
+                    onClick={jobsearchapp}
+                    variant="solid"
+                    colorScheme="blue"
+                  >
+                    Visit Github Repo
+                  </Button>
+                </CardFooter>
+              </Stack>
+            </Card>
+            <Card
+              direction={{ base: "column", sm: "row" }}
+              overflow="hidden"
+              variant="outline"
+            >
+              <Image
+                objectFit="cover"
+                maxW={{ base: "100%", sm: "200px" }}
+                src="https://kaysharbor.com/wp-content/uploads/2018/05/all-about-react-native-apps-776x415.png"
+                alt="job search"
+              />
+
+              <Stack>
+                <CardBody>
                   <Heading size="md">Job Search Mobile App</Heading>
                   <Text py="2">June 2023</Text>
                   <Text py="2">
