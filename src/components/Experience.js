@@ -31,6 +31,10 @@ export default function Experience({ color }) {
     );
   };
 
+  const pipeiq = () => {
+    window.open(`https://pipeiq.ai/`, "_blank", "noreferrer,noopener");
+  };
+
   const handleSelected = (value) => {
     setSelected(value);
   };
@@ -61,14 +65,47 @@ export default function Experience({ color }) {
             <Image
               objectFit="cover"
               maxW={{ base: "100%", sm: "200px" }}
-              src="https://static-cdn.jtvnw.net/jtv_user_pictures/89ee6212-c17d-444e-8641-b5b3279d88d2-profile_image-300x300.png" //&auto=format&fit=crop&w=800&q=60
+              src="https://photos.wellfound.com/startups/i/9460842-dafffd63076fdab11f12ff0d23c79bbf-medium_jpg.jpg?buster=1682922433"
+              alt="PipeIQ Logo"
+            />
+
+            <Stack>
+              <CardBody>
+                <Heading size="md">
+                  Full-Stack Software Engineer @ PipeIQ
+                </Heading>
+                <Text py="2">June 2023 - Present</Text>
+                <Text py="2">
+                  Pipeiq.ai is an early-stage startup leveraging Generative AI
+                  to accelerate marketing and sales pipelines. Their innovative
+                  orchestration engine utilizes Large Language Models to build
+                  highly personalized chatbots and email bots, revolutionizing
+                  the marketing and sales industry.
+                </Text>
+              </CardBody>
+              <CardFooter>
+                <Button onClick={pipeiq} variant="solid" colorScheme="blue">
+                  Visit Website
+                </Button>
+              </CardFooter>
+            </Stack>
+          </Card>
+          <Card
+            direction={{ base: "column", sm: "row" }}
+            overflow="hidden"
+            variant="outline"
+          >
+            <Image
+              objectFit="cover"
+              maxW={{ base: "100%", sm: "200px" }}
+              src="https://static-cdn.jtvnw.net/jtv_user_pictures/89ee6212-c17d-444e-8641-b5b3279d88d2-profile_image-300x300.png"
               alt="UBCEA Logo"
             />
 
             <Stack>
               <CardBody>
                 <Heading size="md">Software Engineer @ UBCEA</Heading>
-                <Text py="2">2022-Present</Text>
+                <Text py="2">Sept 2022 - Present</Text>
                 <Text py="2">
                   Web + App Development in React, Next.js and Wordpress
                 </Text>
@@ -97,7 +134,7 @@ export default function Experience({ color }) {
                 <Heading size="md">
                   Director of Technology @ LeadersFluent
                 </Heading>
-                <Text py="2">2020-2022</Text>
+                <Text py="2">Sept 2020 - June 2022</Text>
                 <Text py="2">
                   Web Development, Content Creation, API Integration in HTML,
                   CSS, JavaScript, MailChimp and Wordpress.
