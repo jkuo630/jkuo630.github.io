@@ -41,10 +41,10 @@ export default function About({ color }) {
             Computer Science and Business. I am a passionate software developer
             with a diverse portfolio of projects containing a variety of
             technical stacks. I also have extensive leadership experience
-            through my professional and extracurricular endeavours. When I'm not
-            coding, you can find me hitting the gym, playing the newest video
-            games, polishing my stock portfolio or catching up with my favourite
-            animes! Here are just some of the tech I've worked with!
+            through my professional and extracurricular endeavours. While I am
+            not doing coursework, you can find me pulling all-nighters at
+            hackathons and case comps, building new side projects or pursuing my
+            side hustles! Here are just some of the tech I've worked with!
           </Text>
           <HStack spacing="50px">
             <Icon as={DiJsBadge} w={10} h={10} color="yellow.500" />
