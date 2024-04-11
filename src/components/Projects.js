@@ -117,7 +117,7 @@ export default function Projects({ color }) {
               <Image
                 objectFit="cover"
                 maxW={{ base: "100%", sm: "200px" }}
-                src="https://www.imperialusa.com/media/blog/Ping_Pong_Post.jpg"
+                src="https://cdn-icons-png.flaticon.com/512/4611/4611024.png"
                 alt="ping pong"
               />
 

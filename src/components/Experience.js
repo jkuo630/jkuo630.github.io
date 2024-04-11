@@ -39,6 +39,10 @@ export default function Experience({ color }) {
     window.open(`https://www.smarttwigs.com/`, "_blank", "noreferrer,noopener");
   };
 
+  const boeing = () => {
+    window.open(`https://www.boeing.com/`, "_blank", "noreferrer,noopener");
+  };
+
   const handleSelected = (value) => {
     setSelected(value);
   };
@@ -69,16 +73,39 @@ export default function Experience({ color }) {
             <Image
               objectFit="cover"
               maxW={{ base: "100%", sm: "200px" }}
+              src="https://i.pinimg.com/736x/12/c4/58/12c458169858d17de2c2d944ca694ce6.jpg"
+              alt="Boeing Logo"
+            />
+            <Stack>
+              <CardBody>
+                <Heading size="md">Software Engineer Intern @ Boeing</Heading>
+                <Text py="2">Jan 2024 - Present</Text>
+                <Text py="2">Safety and Flight Data Analytics Team.</Text>
+              </CardBody>
+              <CardFooter>
+                <Button onClick={boeing} variant="solid" colorScheme="blue">
+                  Visit Website
+                </Button>
+              </CardFooter>
+            </Stack>
+          </Card>
+          <Card
+            direction={{ base: "column", sm: "row" }}
+            overflow="hidden"
+            variant="outline"
+          >
+            <Image
+              objectFit="cover"
+              maxW={{ base: "100%", sm: "200px" }}
               src="https://photos.wellfound.com/startups/i/9460842-dafffd63076fdab11f12ff0d23c79bbf-medium_jpg.jpg?buster=1682922433"
               alt="PipeIQ Logo"
             />
-
             <Stack>
               <CardBody>
                 <Heading size="md">
                   Full-Stack Software Engineer Intern @ PipeIQ
                 </Heading>
-                <Text py="2">June 2023 - Present</Text>
+                <Text py="2">May 2023 - Aug 2023</Text>
                 <Text py="2">
                   Pipeiq.ai is an early-stage startup leveraging Generative AI
                   to accelerate marketing and sales pipelines. Their innovative
