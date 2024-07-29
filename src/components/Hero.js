@@ -54,7 +54,7 @@ export default function Header({ color }) {
             color={"gray.500"}
             fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
           >
-            Second year computer science and business student @ UBC
+            Third year computer science and business student @ UBC
           </Text>
           <Stack
             direction={"column"}
