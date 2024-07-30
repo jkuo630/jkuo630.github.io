@@ -31,14 +31,15 @@ export default function About({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Text scolor={"gray.400"} fontSize={"xl"} px={4}>
-            Hi! 👋 My name is Jason. I'm a software engineer, drake enthusiant,
-            and aspiring pro-chef. I'm currently at the University of British
+            Hi! 👋 My name is Jason. I'm a software engineer, Pokemon
+            enthusiant, from Toronto. I'm currently at the University of British
             Columbia studying Computer Science and Business wrapping up an
             internship with Boeing. I am passionate about building sustainable
             tech for business and empowering hackers through hackathons.
-            Currently building ML models for predictive data analytics,
-            mastering data structures and algorithms and building a strong
-            personal stock portfolio. Here are my favourite languages to use! 👀
+            Currently building ML models for predictive data analytics, learning
+            Data Engineering, mastering data structures and algorithms and
+            building a strong personal stock portfolio. Here are my favourite
+            languages to use! 👀
           </Text>
           <HStack justify="center" spacing="50px">
             <Icon as={DiPython} w={10} h={10} />

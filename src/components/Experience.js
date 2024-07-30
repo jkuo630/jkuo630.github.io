@@ -91,9 +91,10 @@ export default function Experience({ color }) {
                 <Text>
                   <ul>
                     <li>
-                      Assisted with the development of a predictive maintenance
-                      alerting system for airlines reducing unscheduled
-                      maintenance events and minimizing downtime by 33%.
+                      Assisted with the development of a full-stack predictive
+                      maintenance alerting system with data visualization using
+                      React and Python for airlines reducing unscheduled
+                      maintenance events and minimizing downtime.
                     </li>
                     <li>
                       Created cloud functions for a data pipeline that keep an
@@ -102,8 +103,8 @@ export default function Experience({ color }) {
                       out alerts.
                     </li>
                     <li>
-                      Decreased data analysis runtime by 45% by refining and
-                      implementing algorithms that process 1+ million raw flight
+                      Decreased data analysis runtime by 25% by refining and
+                      implementing algorithms that process 2+ million raw flight
                       data points.
                     </li>
                     <li>
@@ -129,7 +130,7 @@ export default function Experience({ color }) {
               <CardBody>
                 <Heading size="md">PipeIQ 🤖</Heading>
                 <Text py="2">
-                  Software Engineering Intern, May 2023 - Aug 2023
+                  Software and Data Engineering Intern, May 2023 - Aug 2023
                 </Text>
                 <Text py="2">
                   Joined{" "}
@@ -147,24 +148,23 @@ export default function Experience({ color }) {
                 </Text>
                 <ul>
                   <li>
-                    Increased user click-through-rates and traffic by building
-                    several responsive front-end components on the home page
-                    using Typescript and React.
+                    Developed scalable ELT pipelines using SQL, Python, Spark,
+                    and Airflow for automated user profile data retrieval.
                   </li>
                   <li>
-                    Built several API integrations within the client, including
-                    a Google sign-in feature with Auth0 and a calendly
-                    integration.
+                    Developed a data visualization dashboard in React,
+                    processing data points for comprehensive insights.
                   </li>
                   <li>
-                    Developed data pipelines using AWS Lambda functions to
-                    retrieve and compute user data from the database.
+                    Optimized SQL and NoSQL database queries, leading to a
+                    reduction in runtime and improved performance.
                   </li>
                   <li>
                     Was apart of several cross-functional teams, including
                     business strategies/operations, design, engineering, and
                     ML/AI, to ensure seamless product alignment throughout
-                    multiple sprints.
+                    multiple sprints. Had a unique opportunity to work a lot of
+                    Data Engineers as well.
                   </li>
                 </ul>
                 <Text>
@@ -201,17 +201,16 @@ export default function Experience({ color }) {
                 </Text>
                 <ul>
                   <li>
-                    Built front-end components in React and React native for the
-                    web and app user login page.
+                    Built Google sign-in feature for a social media app using
+                    JavaScript, improving user experience for users.
                   </li>
                   <li>
-                    Increased marketing and sale strategies by $1.5k for clients
-                    by delivering data-driven insights with an analytics
-                    dashboard.
+                    Implemented API caching within a microservices architecture,
+                    improving latency and scalability.
                   </li>
                   <li>
-                    Enhanced security by implementing middleware API and web
-                    services for seamless and secure user logins.
+                    Refactored legacy codebases for better performance, reducing
+                    technical debt and improving code readability.
                   </li>
                   <li>
                     My work was on mobile app development and web app
