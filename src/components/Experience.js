@@ -83,10 +83,10 @@ export default function Experience({ color }) {
                     Boeing
                   </a>{" "}
                   this winter in Vancouver and got to meet some amazing people.
-                  I was on the Flight and Safety Data Analytics team, working
-                  with the backend and an internal client-facing web
-                  application. I learned a lot about the aviation and aerospace
-                  industry.
+                  I was on the Flight and Safety Data Analytics team, building
+                  algorithms for the backend of a flight data analytics tool and
+                  an internal client-facing web application. I learned a lot
+                  about the aviation, aerospace and defence industry.
                 </Text>
                 <Text>
                   <ul>
