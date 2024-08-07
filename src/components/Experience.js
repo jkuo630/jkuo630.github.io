@@ -86,7 +86,7 @@ export default function Experience({ color }) {
                   I was on the Flight and Safety Data Analytics team, building
                   algorithms for the backend of a flight data analytics tool and
                   an internal client-facing web application. I learned a lot
-                  about the aviation, aerospace and defence industry.
+                  about aviation, aerospace and defence.
                 </Text>
                 <Text>
                   <ul>
