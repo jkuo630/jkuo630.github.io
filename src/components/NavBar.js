@@ -16,7 +16,6 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
-const TbIcons = require("react-icons/tb");
 
 export default function Nav({ color }) {
   const colors = {

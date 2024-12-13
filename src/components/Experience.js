@@ -6,47 +6,12 @@ import {
   Box,
   HStack,
   Card,
-  CardHeader,
   CardBody,
-  CardFooter,
-  Image,
-  Button,
   Heading,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
 import "../App.css";
 
 export default function Experience({ color }) {
-  const [selected, setSelected] = useState("");
-
-  const ubcea = () => {
-    window.open(`https://www.ubcesports.ca/`, "_blank", "noreferrer,noopener");
-  };
-
-  const leadersfluent = () => {
-    window.open(
-      `https://leadersfluent-ca.webnode.page/`,
-      "_blank",
-      "noreferrer,noopener"
-    );
-  };
-
-  const pipeiq = () => {
-    window.open(`https://pipeiq.ai/`, "_blank", "noreferrer,noopener");
-  };
-
-  const smarttwigs = () => {
-    window.open(`https://www.smarttwigs.com/`, "_blank", "noreferrer,noopener");
-  };
-
-  const boeing = () => {
-    window.open(`https://www.boeing.com/`, "_blank", "noreferrer,noopener");
-  };
-
-  const handleSelected = (value) => {
-    setSelected(value);
-  };
-
   return (
     <>
       <Container maxW={"3xl"} id="experience">
@@ -73,7 +38,7 @@ export default function Experience({ color }) {
             <Stack>
               <CardBody>
                 <Heading size="md">Boeing ✈️</Heading>
-                <Text py="2">Software Engineer Intern, Jan 2024 - Present</Text>
+                <Text py="2">Software Engineer Intern, Jan 2024 - Aug 2024</Text>
                 <Text py="2">
                   I joined{" "}
                   <a
@@ -103,9 +68,10 @@ export default function Experience({ color }) {
                       out alerts.
                     </li>
                     <li>
-                      Decreased data analysis runtime by 25% by refining and
-                      implementing algorithms that process 2+ million raw flight
-                      data points.
+                      Optimized and developed event-detecting algorithms in
+                      Python for a Quick Access Recorder flight data analytics
+                      and visualization tool, processing millions of flight data
+                      points and reducing runtime of existing algorithms.
                     </li>
                     <li>
                       My work was a unique blend of software and data
@@ -117,6 +83,7 @@ export default function Experience({ color }) {
                   Extremely grateful for the opportunity as it was my first
                   formal introduction to the software industry and most
                   importantly the people I met who remain lifelong friends.
+                  Shoutout to them, they know who they are!
                 </Text>
               </CardBody>
             </Stack>
@@ -156,8 +123,8 @@ export default function Experience({ color }) {
                     processing data points for comprehensive insights.
                   </li>
                   <li>
-                    Optimized SQL and NoSQL database queries, leading to a
-                    reduction in runtime and improved performance.
+                    Created automated data validation scripts in Python to
+                    ensure the accuracy andcompleteness of user profile data.
                   </li>
                   <li>
                     Was apart of several cross-functional teams, including
@@ -201,20 +168,23 @@ export default function Experience({ color }) {
                 </Text>
                 <ul>
                   <li>
-                    Built Google sign-in feature for a social media app using
-                    JavaScript, improving user experience for users.
+                    Prototyped a content moderation system using Python,
+                    scikit-learn and AWS, utilizing natural language processing
+                    and a supervised machine learning model to detect and flag
+                    inappropriate content.
                   </li>
                   <li>
-                    Implemented API caching within a microservices architecture,
-                    improving latency and scalability.
+                    Developed a data visualization dashboard in React,
+                    processing hundreds of thousands of data points from API
+                    endpoints and databases.
                   </li>
                   <li>
-                    Refactored legacy codebases for better performance, reducing
-                    technical debt and improving code readability.
+                    Enhanced microservices to support new data visualization
+                    methods for real-time user profile data using NodeJS.
                   </li>
                   <li>
-                    My work was on mobile app development and web app
-                    development, with a strong focus on login implementation.
+                    My work was on mobile app backend development and web app
+                    development, with a strong focus user data validaton.
                   </li>
                 </ul>
                 <Text>

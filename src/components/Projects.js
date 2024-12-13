@@ -37,7 +37,19 @@ export default function Projects({ color }) {
   };
 
   const stockpredictor = () => {
-    window.open(`https://github.com/jkuo630/`, "_blank", "noreferrer,noopener");
+    window.open(
+      `https://colab.research.google.com/drive/1nn5VpQz1YawZoNMLNpZB1OF2f0V84nwy?usp=sharing`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
+  const presentify = () => {
+    window.open(
+      `https://devpost.com/software/presentify`,
+      "_blank",
+      "noreferrer,noopener"
+    );
   };
 
   const jobsearchapp = () => {
@@ -82,9 +94,30 @@ export default function Projects({ color }) {
             >
               <Stack>
                 <CardBody>
-                  <Heading size="md">
-                    ML Project: Predictive Analytics with Financial Assets
-                  </Heading>
+                  <Heading size="md">Presentify</Heading>
+                  <Text py="2">Oct 2024</Text>
+                  <Text py="2">
+                    AI presentation tool that generates visuals and bullet
+                    points as you talk, in real time.
+                  </Text>
+                  <Button
+                    onClick={presentify}
+                    variant="solid"
+                    colorScheme="blue"
+                  >
+                    Visit Devpost
+                  </Button>
+                </CardBody>
+              </Stack>
+            </Card>
+            <Card
+              direction={{ base: "column", sm: "row" }}
+              overflow="hidden"
+              variant="outline"
+            >
+              <Stack>
+                <CardBody>
+                  <Heading size="md">Stock Predictor and Visualizer</Heading>
                   <Text py="2">April 2024</Text>
                   <Text py="2">
                     Created a Long Short Term Memory artificial neural network
@@ -99,7 +132,7 @@ export default function Projects({ color }) {
                     variant="solid"
                     colorScheme="blue"
                   >
-                    Visit Github Repo
+                    Visit Google Collab
                   </Button>
                 </CardBody>
               </Stack>
