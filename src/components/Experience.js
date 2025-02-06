@@ -37,8 +37,24 @@ export default function Experience({ color }) {
           >
             <Stack>
               <CardBody>
+                <Heading size="md">Meta</Heading>
+                <Text py="2">
+                  Incoming Software Engineer Intern, Summer 2025
+                </Text>
+              </CardBody>
+            </Stack>
+          </Card>
+          <Card
+            direction={{ base: "column", sm: "row" }}
+            overflow="hidden"
+            variant="outline"
+          >
+            <Stack>
+              <CardBody>
                 <Heading size="md">Boeing ✈️</Heading>
-                <Text py="2">Software Engineer Intern, Jan 2024 - Aug 2024</Text>
+                <Text py="2">
+                  Software Engineer Intern, Jan 2024 - Aug 2024
+                </Text>
                 <Text py="2">
                   I joined{" "}
                   <a
