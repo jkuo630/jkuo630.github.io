@@ -37,9 +37,73 @@ export default function Experience({ color }) {
           >
             <Stack>
               <CardBody>
-                <Heading size="md">Meta</Heading>
+                <Heading size="md">Meta 📱</Heading>
                 <Text py="2">
-                  Incoming Software Engineer Intern, Summer 2025
+                  Software Engineer Intern, May 2025 - Aug 2025
+                </Text>
+                <Text py="2">
+                  At{" "}
+                  <a
+                    href="https://www.meta.com/about/company-info/"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    Meta
+                  </a>
+                  , I was on the Bloks Server/Infrastructure team in New York
+                  City, working on the backend and tooling for Meta’s
+                  cross-platform UI framework used across Facebook, Instagram,
+                  Messenger, and WhatsApp. Being part of an infra team meant my
+                  work wasn’t just about building features, it was about
+                  creating the systems and developer experiences that thousands
+                  of engineers depend on daily to ship products to billions of
+                  users.
+                </Text>
+                <Text>
+                  <ul>
+                    <li>
+                      {" "}
+                      Designed and implemented a high-performance, real-time
+                      metrics dashboard using React, Hack, and GraphQL to track
+                      PRE (Performance, Reliability, Efficiency) signals for
+                      Bloks products. The system integrated live data streams,
+                      supporting drill-down analysis across multiple dimensions,
+                      and became a key tool for 15K+ developers during root
+                      cause investigations.
+                    </li>
+                    <li>
+                      Engineered large-scale rendering optimizations—pagination,
+                      infinite scroll, request batching, and client/server-side
+                      caching—to ensure smooth visualization of datasets
+                      containing millions of records without degrading client
+                      performance.
+                    </li>
+                    <li>
+                      Authored secure, parameterized queries in Scuba and Presto
+                      to aggregate and normalize metrics from distributed data
+                      sources, reducing query execution time by 40% and enabling
+                      interactive filtering on the dashboard.
+                    </li>
+                    <li>
+                      {" "}
+                      Built and deployed a VSCode extension in TypeScript that
+                      integrated with the dashboard’s APIs to surface inline
+                      insights via CodeLens directly in developers’ IDEs,
+                      boosting adoption and engagement by allowing engineers to
+                      detect regressions without leaving their workflow.
+                    </li>
+                  </ul>
+                </Text>
+                <Text>
+                  My time at Meta taught me how to think about infrastructure as
+                  a product in itself. One where performance, security, and
+                  usability are just as important as correctness. I learned from
+                  some of the most talented engineers I’ve met and gained a deep
+                  appreciation for Meta’s engineering culture. I was left with
+                  the mindset that great developer tools don’t just save time,
+                  they fundamentally shape how teams build, iterate, and
+                  innovate at scale. Huge shoutout to my manager, mentors and
+                  team for making the experience an unforgettable one. Bloks
+                  will always hold a special place in my heart!
                 </Text>
               </CardBody>
             </Stack>

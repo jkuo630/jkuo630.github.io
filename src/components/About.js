@@ -35,7 +35,7 @@ export default function About({ color }) {
             Columbia studying Computer Science and Business. I am passionate
             about building sustainable tech for business and empowering hackers
             through hackathons. Currently building ML models for predictive data
-            analytics and learning Data Engineering/Infra. Here are my favourite
+            analytics and learning Software Infra. Here are my favourite
             languages to use 👀
           </Text>
           <HStack justify="center" spacing="50px">

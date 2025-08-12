@@ -20,22 +20,6 @@ export default function Projects({ color }) {
     );
   };
 
-  const rizzify = () => {
-    window.open(
-      `https://devpost.com/software/bucshackathon`,
-      "_blank",
-      "noreferrer,noopener"
-    );
-  };
-
-  const chromeextension = () => {
-    window.open(
-      `https://github.com/jkuo630/aichromeextension`,
-      "_blank",
-      "noreferrer,noopener"
-    );
-  };
-
   const stockpredictor = () => {
     window.open(
       `https://colab.research.google.com/drive/1nn5VpQz1YawZoNMLNpZB1OF2f0V84nwy?usp=sharing`,
@@ -52,17 +36,17 @@ export default function Projects({ color }) {
     );
   };
 
-  const jobsearchapp = () => {
+  const timecapsules = () => {
     window.open(
-      `https://github.com/jkuo630/reactnativeapp`,
+      `https://github.com/jkuo630/timecapsules`,
       "_blank",
       "noreferrer,noopener"
     );
   };
 
-  const timecapsules = () => {
+  const medi = () => {
     window.open(
-      `https://github.com/jkuo630/timecapsules`,
+      `https://devpost.com/software/medi`,
       "_blank",
       "noreferrer,noopener"
     );
@@ -87,6 +71,27 @@ export default function Projects({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Stack px={4} spacing={4}>
+            <Card
+              direction={{ base: "column", sm: "row" }}
+              overflow="hidden"
+              variant="outline"
+            >
+              <Stack>
+                <CardBody>
+                  <Heading size="md">Medi</Heading>
+                  <Text py="2">Hack the Globe x BCG 2025</Text>
+                  <Text py="2">
+                    Patient-owned AI-powered passport that securely stores all
+                    medical documents and provides a concise overview of a
+                    patient’s health history.
+                  </Text>
+                  <Button onClick={medi} variant="solid" colorScheme="blue">
+                    Visit Devpost
+                  </Button>
+                </CardBody>
+              </Stack>
+            </Card>
+
             <Card
               direction={{ base: "column", sm: "row" }}
               overflow="hidden"
@@ -173,57 +178,6 @@ export default function Projects({ color }) {
             >
               <Stack>
                 <CardBody>
-                  <Heading size="md">Job Search Mobile App</Heading>
-                  <Text py="2">June 2023</Text>
-                  <Text py="2">
-                    A responsive IOS and Android mobile application that
-                    simplfies the job searching process. Made using React Native
-                    and Indeed API. Note: API key has been hidden and disabled.
-                  </Text>
-                  <Button
-                    onClick={jobsearchapp}
-                    variant="solid"
-                    colorScheme="blue"
-                  >
-                    Visit Github Repo
-                  </Button>
-                </CardBody>
-              </Stack>
-            </Card>
-
-            <Card
-              direction={{ base: "column", sm: "row" }}
-              overflow="hidden"
-              variant="outline"
-            >
-              <Stack>
-                <CardBody>
-                  <Heading size="md">AI Chrome Extension</Heading>
-                  <Text py="2">May 2023</Text>
-                  <Text py="2">
-                    A Chrome extension that brings ChatGPT's conversational
-                    abilities to your browser. Chat effortlessly with an AI
-                    assistant for research, discussions, and information. Just
-                    click the icon, type your queries, and get human-like
-                    responses. Made using HTML, CSS, Javascript, OpenAI API.
-                  </Text>
-                  <Button
-                    onClick={chromeextension}
-                    variant="solid"
-                    colorScheme="blue"
-                  >
-                    Visit Github Repo
-                  </Button>
-                </CardBody>
-              </Stack>
-            </Card>
-            <Card
-              direction={{ base: "column", sm: "row" }}
-              overflow="hidden"
-              variant="outline"
-            >
-              <Stack>
-                <CardBody>
                   <Heading size="md">ReLeaf</Heading>
                   <Text py="2">Best Sustainability Hack @ MetHacks 2023</Text>
                   <Text py="2">
@@ -234,26 +188,6 @@ export default function Projects({ color }) {
                     MongoDB, Google APIs, Playwright, Auth0 and Google Cloud.
                   </Text>
                   <Button onClick={releaf} variant="solid" colorScheme="blue">
-                    Visit DevPost
-                  </Button>
-                </CardBody>
-              </Stack>
-            </Card>
-            <Card
-              direction={{ base: "column", sm: "row" }}
-              overflow="hidden"
-              variant="outline"
-            >
-              <Stack>
-                <CardBody>
-                  <Heading size="md">Rizzify</Heading>
-                  <Text py="2">First Place @ BUCS Hackathon 2023</Text>
-                  <Text py="2">
-                    An application that allows users to recieve custom pick up
-                    lines. Made using HTML, CSS, Bootstrap, JavaScript, ChatGPT
-                    API and Speech Synthesis API.
-                  </Text>
-                  <Button onClick={rizzify} variant="solid" colorScheme="blue">
                     Visit DevPost
                   </Button>
                 </CardBody>
