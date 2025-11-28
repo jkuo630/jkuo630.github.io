@@ -49,6 +49,14 @@ export default function Projects({ color }) {
     );
   };
 
+  const clarq = () => {
+    window.open(
+      `https://www.clarq.ca/`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+
   const medi = () => {
     window.open(
       `https://devpost.com/software/medi`,
@@ -76,6 +84,36 @@ export default function Projects({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Accordion allowToggle>
+            <AccordionItem border="none">
+              <Card
+                direction={{ base: "column", sm: "row" }}
+                overflow="hidden"
+                variant="unstyled"
+              >
+                <Stack width="100%">
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      <Heading size="md">Clarq</Heading>
+                      <Text py="2">Sept 2025</Text>
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    <CardBody>
+                      <Text py="2">
+                        Inline application that allows users to optimize prompts in real time with
+                        a click of a button. Trained off of prompting best practices
+                        to help users get better results from AI chats.
+                      </Text>
+                      <Button onClick={clarq} variant="solid" colorScheme="blue">
+                        Visit Website
+                      </Button>
+                    </CardBody>
+                  </AccordionPanel>
+                </Stack>
+              </Card>
+            </AccordionItem>
+
             <AccordionItem border="none">
               <Card
                 direction={{ base: "column", sm: "row" }}
@@ -116,7 +154,7 @@ export default function Projects({ color }) {
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
                       <Heading size="md">Presentify</Heading>
-                      <Text py="2">Oct 2024</Text>
+                      <Text py="2">StormHacks 2024</Text>
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -186,7 +224,7 @@ export default function Projects({ color }) {
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
                       <Heading size="md">Time Capsules</Heading>
-                      <Text py="2">Jan 2024</Text>
+                      <Text py="2">nwHacks 2024</Text>
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -223,7 +261,7 @@ export default function Projects({ color }) {
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
                       <Heading size="md">ReLeaf</Heading>
-                      <Text py="2">Best Sustainability Hack @ MetHacks 2023</Text>
+                      <Text py="2">MetHacks 2023</Text>
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
