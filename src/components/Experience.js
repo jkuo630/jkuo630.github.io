@@ -80,7 +80,7 @@ export default function Experience({ color }) {
                             PRE (Performance, Reliability, Efficiency) signals for
                             Bloks products. The system integrated live data streams,
                             supporting drill-down analysis across multiple dimensions,
-                            and became a key tool for 15K+ developers during root
+                            and became a key tool for Bloks developers during root
                             cause investigations.
                           </li>
                           <li>
@@ -93,8 +93,7 @@ export default function Experience({ color }) {
                           <li>
                             Authored secure, parameterized queries in Scuba and Presto
                             to aggregate and normalize metrics from distributed data
-                            sources, reducing query execution time by 40% and enabling
-                            interactive filtering on the dashboard.
+                            sources.
                           </li>
                           <li>
                             {" "}

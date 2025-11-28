@@ -1,5 +1,4 @@
 import {
-  Icon,
   Divider,
   Stack,
   Text,
@@ -7,9 +6,6 @@ import {
   Box,
   HStack,
 } from "@chakra-ui/react";
-import { DiNodejs } from "react-icons/di";
-import { DiPython } from "react-icons/di";
-import { DiReact } from "react-icons/di";
 
 export default function About({ color }) {
   return (
@@ -19,7 +15,7 @@ export default function About({ color }) {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
+          pb={{ base: 10, md: 10 }}
         >
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
@@ -35,14 +31,8 @@ export default function About({ color }) {
             Columbia studying Computer Science and Business. I am passionate
             about building sustainable tech for business and empowering hackers
             through hackathons. Currently building ML models for predictive data
-            analytics and learning Software Infra. Here are my favourite
-            languages to use 👀
+            analytics and learning Software Infra.
           </Text>
-          <HStack justify="center" spacing="50px">
-            <Icon as={DiPython} w={10} h={10} />
-            <Icon as={DiReact} w={10} h={10} color="blue.500" />
-            <Icon as={DiNodejs} w={10} h={10} />
-          </HStack>
         </Stack>
       </Container>
     </>
