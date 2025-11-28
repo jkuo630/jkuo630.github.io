@@ -27,11 +27,10 @@ export default function About({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Text scolor={"gray.400"} fontSize={"xl"} px={4}>
-            Hi! 👋 My name is Jason. I'm currently at the University of British
-            Columbia studying Computer Science and Business. I am passionate
-            about building sustainable tech for business and empowering hackers
-            through hackathons. Currently building ML models for predictive data
-            analytics and learning Software Infra.
+            Hi! 👋 My name is Jason. I'm a fourth year computer science and business student at the University of British
+            Columbia. Previously, I was at Meta building a performance metrics platform on the Bloks Infrastructure team, Meta's cross-platform UI framework. 
+            I've also worked at Boeing building event-detecting algorithms and software for predicting airplane 
+            maintenance needs. Currently building random side projects and learning more about software systems and infrastructure.
           </Text>
         </Stack>
       </Container>
