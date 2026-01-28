@@ -25,6 +25,10 @@ export default function Projects({ color }) {
     );
   };
 
+  const trojan = () => {
+    window.open(`https://devpost.com/software/trojan`, "_blank", "noreferrer,noopener");
+  };
+
   const stockpredictor = () => {
     window.open(
       `https://colab.research.google.com/drive/1nn5VpQz1YawZoNMLNpZB1OF2f0V84nwy?usp=sharing`,
@@ -84,6 +88,37 @@ export default function Projects({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Accordion allowToggle>
+            <AccordionItem border="none">
+              <Card
+                direction={{ base: "column", sm: "row" }}
+                overflow="hidden"
+                variant="unstyled"
+              >
+                <Stack width="100%">
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      <Heading size="md">Trojan</Heading>
+                      <Text py="2">nwHacks 2026</Text>
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    <CardBody>
+                      <Text py="2">
+                        Platform that orchestrates AI agents to detect and fix security
+                        vulnerabilities in code before you ship. Streams actionable findings in
+                        real time and helps generate fixes that fit into a normal developer
+                        workflow.
+                      </Text>
+                      <Button onClick={trojan} variant="solid" colorScheme="blue">
+                        Visit Devpost
+                      </Button>
+                    </CardBody>
+                  </AccordionPanel>
+                </Stack>
+              </Card>
+            </AccordionItem>
+
             <AccordionItem border="none">
               <Card
                 direction={{ base: "column", sm: "row" }}
