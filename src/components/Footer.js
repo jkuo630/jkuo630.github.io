@@ -1,20 +1,13 @@
-import {
-  Box,
-  Container,
-  Stack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 
 export default function Footer() {
+  const muted = useColorModeValue("gray.500", "gray.600");
+
   return (
-    <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
-    >
-      <Container as={Stack} maxW={"6xl"} py={4} align="center">
-        <Text>Made by Jason Kuo</Text>
-      </Container>
+    <Box pt={8}>
+      <Text fontSize="xs" color={muted}>
+        © {new Date().getFullYear()}
+      </Text>
     </Box>
   );
 }

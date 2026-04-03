@@ -1,15 +1,32 @@
-// theme.js
-
-// 1. import `extendTheme` function
 import { extendTheme } from "@chakra-ui/react";
 
-// 2. Add your color mode config
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: false,
 };
 
-// 3. extend the theme
-const theme = extendTheme({ config });
+const theme = extendTheme({
+  config,
+  fonts: {
+    heading:
+      '"DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+    body: '"DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  },
+  styles: {
+    global: (props) => ({
+      body: {
+        bg: props.colorMode === "dark" ? "gray.900" : "white",
+        WebkitFontSmoothing: "antialiased",
+      },
+    }),
+  },
+  components: {
+    Link: {
+      baseStyle: {
+        _hover: { textDecoration: "none", opacity: 0.8 },
+      },
+    },
+  },
+});
 
 export default theme;
