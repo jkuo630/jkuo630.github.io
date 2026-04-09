@@ -22,14 +22,14 @@ const roles = [
     url: "https://pipeiq.ai/",
     title: "Software & Data Engineering Intern",
     period: "May 2023 – Aug 2023 · Palo Alto",
-    summary: "ELT pipelines, Airflow, React dashboards, data validation.",
+    summary: "ELT pipelines, high-volume visualization dashboards, data validation.",
   },
   {
     company: "Smarttwigs",
     url: "https://www.smarttwigs.com/",
     title: "Software Engineering Intern",
     period: "Jan 2023 – May 2023 · Jersey City",
-    summary: "Content moderation ML prototype, CI/CD pipelines w/ AWS and Kubernetes.",
+    summary: "ML content moderation, CI/CD pipelines w/ AWS and Kubernetes.",
   },
 ];
 
